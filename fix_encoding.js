@@ -1,4 +1,6 @@
-{
+const fs = require('fs');
+
+const content = `{
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
   "name": "Trinity Indonesia server Minecraft Anarchy RPG",
@@ -18,14 +20,6 @@
         "group": "Mulai",
         "pages": [
           "index"
-        ]
-      },
-      {
-        "group": "Fitur",
-        "pages": [
-          "features/playermarket",
-          "features/dailyquest",
-          "features/customenchants"
         ]
       }
     ]
@@ -48,6 +42,13 @@
     }
   },
   "footer": {
-    "socials": {}
+    "socials": {
+      "x": "https://x.com/mintlify",
+      "github": "https://github.com/mintlify",
+      "linkedin": "https://linkedin.com/company/mintlify"
+    }
   }
-}
+}`;
+
+fs.writeFileSync('docs.json', content, { encoding: 'utf8' });
+console.log('Successfully rewrote docs.json as UTF-8.');

@@ -1,0 +1,7 @@
+{
+  "name": "wiki-trinityindonesia",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "npx mintlify dev"
+  }
+}

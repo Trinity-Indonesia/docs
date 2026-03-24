@@ -1,0 +1,57 @@
+---
+title: "Pasar Pemain"
+description: "Sistem pasar pelelangan global antar pemain menggunakan Pasar Pemain"
+icon: "shop"
+---
+
+Sistem perdagangan antar sesama penghuni server dipusatkan pada antarmuka **Pasar Pemain**. Semua penawaran item, senjata, hingga material berharga bisa kamu temukan secara mudah dalam satu tempat yang sama.
+
+![Player Market](/images/playermarket/heroimage.png)
+
+## Perintah Pasar
+
+Berikut adalah perintah (*commands*) wajib yang akan kamu gunakan secara rutin untuk berniaga:
+
+<CardGroup cols={2}>
+  <Card title="Menawarkan Barang" icon="tag">
+    **`/offer <harga>`**
+    Genggam item atau barang yang ingin kamu niagakan di tangan (main-hand), lalu ketik perintah ini.
+  </Card>
+  <Card title="Membuka Toko" icon="basket-shopping">
+    **`/market`**
+    Membuka GUI (menu) utama dari Pasar Pemain untuk mencari barang yang dijual orang lain.
+  </Card>
+</CardGroup>
+
+## Batas dan Ketentuan Penawaran
+
+Agar sirkulasi pasar tidak tersumbat oleh penawaran bodong/sampah, market memiliki regulasi otomatis:
+
+- **Batas Maksimal Penawaran:** Secara *default*, setiap pemain mendapatkan limit **28 slot** untuk menawarkan barang dagangannya.
+- **Pajak Transaksi:** Saat ini Server **memungut pajak transaksi** (`5% tax`). Pendapatan penjual sepenuhnya utuh.
+- **Kedaluwarsa (Expired):** Setiap barang yang tidak laku dibeli pemain lain selama **7 hari** (10.080 menit) akan otomatis ditarik dari peredaran. Kamu perlu mengambil ulang item tersebut di menu marketmu.
+
+## Mengambil Hasil Penjualan atau Barang Kedaluwarsa
+
+Saat kamu tengah *offline* namun barangmu berhasil terjual, kamu dapat mengklaim uangnya ketika sudah terhubung masuk ke dalam server:
+1. Ketik `/market`
+2. Klik ikon peti (Chest) bertuliskan **PENAWARAN ANDA** di deretan menu navigasi bagian bawah layar menu.
+
+![Penawaran Anda](/images/playermarket/penawarananda.png)
+
+3. Klik untuk mengklaim profit pendapatan atau membatalkan penawaran yang sudah terlanjur dipajang!
+
+<Tip>
+Setiap kamu *login*, jika ada pundi-pundi uang *pending* yang belum diambil dari lapak, sistem akan mengirim *reminder* di chat log-mu!
+</Tip>
+
+## Fitur Pencarian Cerdas
+
+Ada ratusan hingga ribuan penawaran di dalam server? 
+Jangan khawatir, kamu bisa mengetik di kotak pencarian Anvil virtual:
+
+![Cari Item](/images/playermarket/cariitem.png)
+
+1. Buka pasar dengan `/market`.
+2. Temukan ikon **CARI** bergambar *Name Tag* di tab bawah.
+3. Ketikkan nama spesifik barang (contoh: *diamond*, *elytra*, dll) dan tekan kertas di hasil Anvil!
